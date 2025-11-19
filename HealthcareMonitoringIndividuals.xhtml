@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.1//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-2.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      version="XHTML+RDFa 1.1"
+      xml:lang="en"
+      prefix="onto: https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#
+              ind: https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringIndividuals.ttl#
+              xsd: http://www.w3.org/2001/XMLSchema#">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Healthcare Monitoring – Individuals (RDFa)</title>
+</head>
+
+<body>
+
+<h1>Healthcare Monitoring – RDFa Individuals</h1>
+
+<div resource="ind:Alice" typeof="onto:CriticalPatient onto:Patient">
+    <h2>Alice</h2>
+    <ul>
+        <li><span property="onto:age" datatype="xsd:integer">75</span></li>
+        <li>Primary doctor: <a href="ind:Dr_Smith" property="onto:hasPrimaryDoctor">Dr_Smith</a></li>
+        <li>Nurse: <a href="ind:Eva" property="onto:hasNurse">Eva</a></li>
+        <li>Located in: <a href="ind:cityClinic" property="onto:locatedIn">cityClinic</a></li>
+        <li>Uses device: <a href="ind:hrMonitor1" property="onto:usesDevice">hrMonitor1</a></li>
+        <li>Description: A critical monitored patient</li>
+    </ul>
+</div>
+
+<div resource="ind:Bob" typeof="onto:Patient">
+    <h2>Bob</h2>
+    <ul>
+        <li><span property="onto:age" datatype="xsd:integer">45</span></li>
+        <li>Primary doctor: <a href="ind:Dr_Lee" property="onto:hasPrimaryDoctor">Dr_Lee</a></li>
+        <li>Nurse: <a href="ind:Eva" property="onto:hasNurse">Eva</a></li>
+        <li>Located in: <a href="ind:cityClinic" property="onto:locatedIn">cityClinic</a></li>
+        <li>Uses device: <a href="ind:oxySensor1" property="onto:usesDevice">oxySensor1</a></li>
+        <li>Description: Recovered monitored patient</li>
+    </ul>
+</div>
+
+<div resource="ind:Carol" typeof="onto:Patient">
+    <h2>Carol</h2>
+    <ul>
+        <li><span property="onto:age" datatype="xsd:integer">72</span></li>
+        <li>Primary doctor: <a href="ind:Dr_Smith" property="onto:hasPrimaryDoctor">Dr_Smith</a></li>
+        <li>Located in: <a href="ind:cityClinic" property="onto:locatedIn">cityClinic</a></li>
+        <li>Description: Recovered patient not monitored by any device</li>
+    </ul>
+</div>
+
+<div resource="ind:Dr_Smith" typeof="onto:Doctor">
+    <h2>Dr_Smith</h2>
+    <p>Description: Primary doctor of Alice</p>
+</div>
+
+<div resource="ind:Dr_Lee" typeof="onto:Doctor">
+    <h2>Dr_Lee</h2>
+    <p>Description: Primary doctor of Bob</p>
+</div>
+
+<div resource="ind:Eva" typeof="onto:Nurse">
+    <h2>Eva</h2>
+    <p>Description: Nurse responsible for rooms 101 and 102</p>
+</div>
+
+<div resource="ind:cityClinic" typeof="onto:Clinic">
+    <h2>cityClinic</h2>
+    <p>Description: Healthcare clinic</p>
+</div>
+
+<div resource="ind:hrMonitor1" typeof="onto:HeartRateMonitor">
+    <h2>hrMonitor1</h2>
+    <p>Description: Monitoring device attached to Alice</p>
+</div>
+
+<div resource="ind:oxySensor1" typeof="onto:OxygenSensor">
+    <h2>oxySensor1</h2>
+    <p>Description: Oxygen sensor used for Bob</p>
+</div>
+
+<div resource="ind:room101" typeof="onto:Room">
+    <h2>room101</h2>
+    <p>Description: Patient room 101 in City Clinic</p>
+</div>
+
+<div resource="ind:room102" typeof="onto:Room">
+    <h2>room102</h2>
+    <p>Description: Patient room 102 in City Clinic</p>
+</div>
+
+<div resource="ind:telemedService1" typeof="onto:TelemedicineService">
+    <h2>telemedService1</h2>
+    <p>Description: Telemedicine service used for remote monitoring</p>
+</div>
+
+</body>
+</html>
