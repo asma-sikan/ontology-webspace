@@ -14,86 +14,92 @@
 
 <body>
 
-<h1>Healthcare Monitoring – RDFa Individuals</h1>
+<h1>Healthcare Monitoring – Individuals</h1>
 
-<div resource="ind:Alice" typeof="onto:CriticalPatient onto:Patient">
-    <h2>Alice</h2>
-    <ul>
-        <li><span property="onto:age" datatype="xsd:integer">75</span></li>
-        <li>Primary doctor: <a href="ind:Dr_Smith" property="onto:hasPrimaryDoctor">Dr_Smith</a></li>
-        <li>Nurse: <a href="ind:Eva" property="onto:hasNurse">Eva</a></li>
-        <li>Located in: <a href="ind:cityClinic" property="onto:locatedIn">cityClinic</a></li>
-        <li>Uses device: <a href="ind:hrMonitor1" property="onto:usesDevice">hrMonitor1</a></li>
-        <li>Description: A critical monitored patient</li>
-    </ul>
-</div>
+<h2 resource="ind:Alice" typeof="onto:CriticalPatient onto:Patient">Alice</h2>
+<ul>
+    <li>Type: CriticalPatient, Patient</li>
+    <li>Age: <span property="onto:age" datatype="xsd:integer">75</span></li>
+    <li>Primary doctor: <span property="onto:hasPrimaryDoctor" resource="ind:Dr_Smith">Dr_Smith</span></li>
+    <li>Nurse: <span property="onto:hasNurse" resource="ind:Eva">Eva</span></li>
+    <li>Located in: <span property="onto:locatedIn" resource="ind:cityClinic">cityClinic</span></li>
+    <li>Uses device: <span property="onto:usesDevice" resource="ind:hrMonitor1">hrMonitor1 (HeartRateMonitor)</span></li>
+    <li>Description: "A critical monitored patient"</li>
+</ul>
 
-<div resource="ind:Bob" typeof="onto:Patient">
-    <h2>Bob</h2>
-    <ul>
-        <li><span property="onto:age" datatype="xsd:integer">45</span></li>
-        <li>Primary doctor: <a href="ind:Dr_Lee" property="onto:hasPrimaryDoctor">Dr_Lee</a></li>
-        <li>Nurse: <a href="ind:Eva" property="onto:hasNurse">Eva</a></li>
-        <li>Located in: <a href="ind:cityClinic" property="onto:locatedIn">cityClinic</a></li>
-        <li>Uses device: <a href="ind:oxySensor1" property="onto:usesDevice">oxySensor1</a></li>
-        <li>Description: Recovered monitored patient</li>
-    </ul>
-</div>
+<h2 resource="ind:Bob" typeof="onto:Patient">Bob</h2>
+<ul>
+    <li>Type: Patient</li>
+    <li>Age: <span property="onto:age" datatype="xsd:integer">45</span></li>
+    <li>Primary doctor: <span property="onto:hasPrimaryDoctor" resource="ind:Dr_Lee">Dr_Lee</span></li>
+    <li>Nurse: <span property="onto:hasNurse" resource="ind:Eva">Eva</span></li>
+    <li>Located in: <span property="onto:locatedIn" resource="ind:cityClinic">cityClinic</span></li>
+    <li>Uses device: <span property="onto:usesDevice" resource="ind:oxySensor1">oxySensor1 (OxygenSensor)</span></li>
+    <li>Description: "Recovered monitored patient"</li>
+</ul>
 
-<div resource="ind:Carol" typeof="onto:Patient">
-    <h2>Carol</h2>
-    <ul>
-        <li><span property="onto:age" datatype="xsd:integer">72</span></li>
-        <li>Primary doctor: <a href="ind:Dr_Smith" property="onto:hasPrimaryDoctor">Dr_Smith</a></li>
-        <li>Located in: <a href="ind:cityClinic" property="onto:locatedIn">cityClinic</a></li>
-        <li>Description: Recovered patient not monitored by any device</li>
-    </ul>
-</div>
+<h2 resource="ind:Carol" typeof="onto:Patient">Carol</h2>
+<ul>
+    <li>Type: Patient</li>
+    <li>Age: <span property="onto:age" datatype="xsd:integer">72</span></li>
+    <li>Primary doctor: <span property="onto:hasPrimaryDoctor" resource="ind:Dr_Smith">Dr_Smith</span></li>
+    <li>Located in: <span property="onto:locatedIn" resource="ind:cityClinic">cityClinic</span></li>
+    <li>Description: "Recovered patient currently not monitored by any device"</li>
+</ul>
 
-<div resource="ind:Dr_Smith" typeof="onto:Doctor">
-    <h2>Dr_Smith</h2>
-    <p>Description: Primary doctor of Alice</p>
-</div>
+<h2 resource="ind:Dr_Smith" typeof="onto:Doctor">Dr_Smith</h2>
+<ul>
+    <li>Type: Doctor</li>
+    <li>Description: "Primary doctor of Alice"</li>
+</ul>
 
-<div resource="ind:Dr_Lee" typeof="onto:Doctor">
-    <h2>Dr_Lee</h2>
-    <p>Description: Primary doctor of Bob</p>
-</div>
+<h2 resource="ind:Dr_Lee" typeof="onto:Doctor">Dr_Lee</h2>
+<ul>
+    <li>Type: Doctor</li>
+    <li>Description: "Primary doctor of Bob"</li>
+</ul>
 
-<div resource="ind:Eva" typeof="onto:Nurse">
-    <h2>Eva</h2>
-    <p>Description: Nurse responsible for rooms 101 and 102</p>
-</div>
+<h2 resource="ind:Eva" typeof="onto:Nurse">Eva</h2>
+<ul>
+    <li>Type: Nurse</li>
+    <li>Description: "Nurse responsible for rooms 101 and 102"</li>
+</ul>
 
-<div resource="ind:cityClinic" typeof="onto:Clinic">
-    <h2>cityClinic</h2>
-    <p>Description: Healthcare clinic</p>
-</div>
+<h2 resource="ind:cityClinic" typeof="onto:Clinic">cityClinic</h2>
+<ul>
+    <li>Type: Clinic</li>
+    <li>Description: "Healthcare clinic"</li>
+</ul>
 
-<div resource="ind:hrMonitor1" typeof="onto:HeartRateMonitor">
-    <h2>hrMonitor1</h2>
-    <p>Description: Monitoring device attached to Alice</p>
-</div>
+<h2 resource="ind:hrMonitor1" typeof="onto:HeartRateMonitor">hrMonitor1</h2>
+<ul>
+    <li>Type: HeartRateMonitor</li>
+    <li>Description: "Monitoring device attached to Alice"</li>
+</ul>
 
-<div resource="ind:oxySensor1" typeof="onto:OxygenSensor">
-    <h2>oxySensor1</h2>
-    <p>Description: Oxygen sensor used for Bob</p>
-</div>
+<h2 resource="ind:oxySensor1" typeof="onto:OxygenSensor">oxySensor1</h2>
+<ul>
+    <li>Type: OxygenSensor</li>
+    <li>Description: "Oxygen sensor used for Bob"</li>
+</ul>
 
-<div resource="ind:room101" typeof="onto:Room">
-    <h2>room101</h2>
-    <p>Description: Patient room 101 in City Clinic</p>
-</div>
+<h2 resource="ind:room101" typeof="onto:Room">room101</h2>
+<ul>
+    <li>Type: Room</li>
+    <li>Description: "Patient room 101 in City Clinic"</li>
+</ul>
 
-<div resource="ind:room102" typeof="onto:Room">
-    <h2>room102</h2>
-    <p>Description: Patient room 102 in City Clinic</p>
-</div>
+<h2 resource="ind:room102" typeof="onto:Room">room102</h2>
+<ul>
+    <li>Type: Room</li>
+    <li>Description: "Patient room 102 in City Clinic"</li>
+</ul>
 
-<div resource="ind:telemedService1" typeof="onto:TelemedicineService">
-    <h2>telemedService1</h2>
-    <p>Description: Telemedicine service used for remote monitoring</p>
-</div>
+<h2 resource="ind:telemedService1" typeof="onto:TelemedicineService">telemedService1</h2>
+<ul>
+    <li>Type: TelemedicineService</li>
+    <li>Description: "Telemedicine service used for remote monitoring"</li>
+</ul>
 
 </body>
 </html>
