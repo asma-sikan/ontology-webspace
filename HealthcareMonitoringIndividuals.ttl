@@ -1,0 +1,172 @@
+@prefix : <https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringIndividuals.ttl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringIndividuals.ttl#> .
+
+<https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringIndividuals.ttl> rdf:type owl:Ontology ;
+                                                                                      owl:imports <https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl> .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringIndividuals.ttl#Alice
+:Alice rdf:type owl:NamedIndividual ,
+                <https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#Patient> .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Alice ;
+   owl:annotatedProperty rdf:type ;
+   owl:annotatedTarget <https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#Patient> ;
+   rdfs:comment "\"A critical monitored patient\"" ;
+   rdfs:label "\"Alice\""
+ ] .
+
+
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringIndividuals.ttl#Bob
+:Bob rdf:type owl:NamedIndividual ,
+              <https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#Patient> .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Bob ;
+   owl:annotatedProperty rdf:type ;
+   owl:annotatedTarget <https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#Patient> ;
+   rdfs:comment "\"Recovered monitored patient\"" ;
+   rdfs:label "Bob"
+ ] .
+
+
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringIndividuals.ttl#Carol
+:Carol rdf:type owl:NamedIndividual ,
+                <https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#Patient> .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Carol ;
+   owl:annotatedProperty rdf:type ;
+   owl:annotatedTarget <https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#Patient> ;
+   rdfs:comment "\"Recovered patient currently not monitored by any device\"" ;
+   rdfs:label "Carol"
+ ] .
+
+
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringIndividuals.ttl#Dr_Lee
+:Dr_Lee rdf:type owl:NamedIndividual ,
+                 <https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#Doctor> .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Dr_Lee ;
+   owl:annotatedProperty rdf:type ;
+   owl:annotatedTarget <https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#Doctor> ;
+   rdfs:comment "\"Primary doctor of Bob\"" ;
+   rdfs:label "\"Dr Lee\""
+ ] .
+
+
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringIndividuals.ttl#Dr_Smith
+:Dr_Smith rdf:type owl:NamedIndividual ,
+                   <https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#Doctor> .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Dr_Smith ;
+   owl:annotatedProperty rdf:type ;
+   owl:annotatedTarget <https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#Doctor> ;
+   rdfs:comment "\"Primary doctor of Alice\"" ;
+   rdfs:label "\"Dr Smith\""
+ ] .
+
+
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringIndividuals.ttl#Eva
+:Eva rdf:type owl:NamedIndividual ,
+              <https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#Nurse> .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Eva ;
+   owl:annotatedProperty rdf:type ;
+   owl:annotatedTarget <https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#Nurse> ;
+   rdfs:comment "\"Nurse responsible for rooms 101 and 102\"" ;
+   rdfs:label "\"Nurse Eva\""
+ ] .
+
+
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringIndividuals.ttl#cityClinic
+:cityClinic rdf:type owl:NamedIndividual ,
+                     <https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#Clinic> .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :cityClinic ;
+   owl:annotatedProperty rdf:type ;
+   owl:annotatedTarget <https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#Clinic> ;
+   rdfs:comment "\"Healthcare clinic\"" ;
+   rdfs:label "\"City Clinic\""
+ ] .
+
+
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringIndividuals.ttl#hrMonitor1
+:hrMonitor1 rdf:type owl:NamedIndividual ,
+                     <https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#HeartRateMonitor> .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :hrMonitor1 ;
+   owl:annotatedProperty rdf:type ;
+   owl:annotatedTarget <https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#HeartRateMonitor> ;
+   rdfs:comment "\"Monitoring device attached to Alice\"" ;
+   rdfs:label "\"Heart rate monitor 1\""
+ ] .
+
+
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringIndividuals.ttl#oxySensor1
+:oxySensor1 rdf:type owl:NamedIndividual ,
+                     <https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#OxygenSensor> .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :oxySensor1 ;
+   owl:annotatedProperty rdf:type ;
+   owl:annotatedTarget <https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#OxygenSensor> ;
+   rdfs:comment "\"Oxygen sensor used for Bob\"" ;
+   rdfs:label "\"Oxygen sensor 1\""
+ ] .
+
+
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringIndividuals.ttl#room101
+:room101 rdf:type owl:NamedIndividual ,
+                  <https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#Room> .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :room101 ;
+   owl:annotatedProperty rdf:type ;
+   owl:annotatedTarget <https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#Room> ;
+   rdfs:comment "\"Patient room 101 in City Clinic\"" ;
+   rdfs:label "\"Room 101\""
+ ] .
+
+
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringIndividuals.ttl#room102
+:room102 rdf:type owl:NamedIndividual ,
+                  <https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#Room> .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :room102 ;
+   owl:annotatedProperty rdf:type ;
+   owl:annotatedTarget <https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#Room> ;
+   rdfs:comment "\"Patient room 102 in City Clinic\"" ;
+   rdfs:label "\"Room 102\""
+ ] .
+
+
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringIndividuals.ttl#telemedService1
+:telemedService1 rdf:type owl:NamedIndividual ,
+                          <https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#TelemedicineService> .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :telemedService1 ;
+   owl:annotatedProperty rdf:type ;
+   owl:annotatedTarget <https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#TelemedicineService> ;
+   rdfs:comment "\"Telemedicine service used for remote monitoring\"" ;
+   rdfs:label "\"Telemedicine service 1\""
+ ] .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
