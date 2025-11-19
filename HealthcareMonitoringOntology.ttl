@@ -40,7 +40,7 @@
           rdfs:range :Nurse .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#hasPrimaryDoctor
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#hasPrimaryDoctor
 :hasPrimaryDoctor rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf owl:topObjectProperty ;
                   owl:inverseOf :primaryDoctorOf ;
@@ -49,21 +49,21 @@
                   rdfs:range :Doctor .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#hasTreatment
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#hasTreatment
 :hasTreatment rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf owl:topObjectProperty ;
               rdfs:domain :Patient ;
               rdfs:range :Treatment .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#locatedIn
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#locatedIn
 :locatedIn rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf owl:topObjectProperty ;
            rdfs:domain :Person ;
            rdfs:range :MedicalFacility .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#prescribedBy
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#prescribedBy
 :prescribedBy rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf owl:topObjectProperty ;
               rdf:type owl:InverseFunctionalProperty ;
@@ -71,14 +71,14 @@
               rdfs:range :Doctor .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#prescribesTreatment
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#prescribesTreatment
 :prescribesTreatment rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf owl:topObjectProperty ;
                      rdfs:domain :Doctor ;
                      rdfs:range :Treatment .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#primaryDoctorOf
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#primaryDoctorOf
 :primaryDoctorOf rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf owl:topObjectProperty ;
                  rdf:type owl:InverseFunctionalProperty ;
@@ -86,7 +86,7 @@
                  rdfs:range :Patient .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#usesDevice
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#usesDevice
 :usesDevice rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf owl:topObjectProperty ;
             rdfs:domain :Patient ;
@@ -97,70 +97,70 @@
 #    Data properties
 #################################################################
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#age
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#age
 :age rdf:type owl:DatatypeProperty ;
      rdfs:subPropertyOf owl:topDataProperty ;
      rdfs:domain :Patient ;
      rdfs:range xsd:integer .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#deviceID
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#deviceID
 :deviceID rdf:type owl:DatatypeProperty ;
           rdfs:subPropertyOf owl:topDataProperty ;
           rdfs:domain :MonitoringDevice ;
           rdfs:range xsd:string .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#gender
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#gender
 :gender rdf:type owl:DatatypeProperty ;
         rdfs:subPropertyOf owl:topDataProperty ;
         rdfs:domain :Patient ;
         rdfs:range xsd:string .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#hasHeartRateValue
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#hasHeartRateValue
 :hasHeartRateValue rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf owl:topDataProperty ;
                    rdfs:domain :HeartRateData ;
                    rdfs:range xsd:integer .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#hasOxygenLevelValue
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#hasOxygenLevelValue
 :hasOxygenLevelValue rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf owl:topDataProperty ;
                      rdfs:domain :OxygenLevelData ;
                      rdfs:range xsd:float .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#hasTemperatureValue
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#hasTemperatureValue
 :hasTemperatureValue rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf owl:topDataProperty ;
                      rdfs:domain :TemperatureData ;
                      rdfs:range xsd:float .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#patientID
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#patientID
 :patientID rdf:type owl:DatatypeProperty ;
            rdfs:subPropertyOf owl:topDataProperty ;
            rdfs:domain :Patient ;
            rdfs:range xsd:string .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#roomNumber
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#roomNumber
 :roomNumber rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf owl:topDataProperty ;
             rdfs:domain :Room ;
             rdfs:range xsd:string .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#severityScore
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#severityScore
 :severityScore rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf owl:topDataProperty ;
                rdfs:domain :Alert ;
                rdfs:range xsd:string .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#timestamp
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#timestamp
 :timestamp rdf:type owl:DatatypeProperty ;
            rdfs:subPropertyOf owl:topDataProperty ;
            rdfs:domain :SensorData ;
@@ -171,12 +171,12 @@
 #    Classes
 #################################################################
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#Alert
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#Alert
 :Alert rdf:type owl:Class ;
        rdfs:subClassOf :HealthcareEntity .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#AlertLevel
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#AlertLevel
 :AlertLevel rdf:type owl:Class ;
             owl:equivalentClass [ rdf:type owl:Class ;
                                   owl:oneOf ( :High
@@ -187,97 +187,97 @@
             rdfs:subClassOf :Alert .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#Appointment
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#Appointment
 :Appointment rdf:type owl:Class ;
              rdfs:subClassOf :DataRecord .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#Bed
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#Bed
 :Bed rdf:type owl:Class ;
      rdfs:subClassOf :Environment ;
      owl:disjointWith :Room .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#Clinic
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#Clinic
 :Clinic rdf:type owl:Class ;
         rdfs:subClassOf :MedicalFacility ;
         owl:disjointWith :Hospital .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#CriticalPatient
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#CriticalPatient
 :CriticalPatient rdf:type owl:Class ;
                  rdfs:subClassOf :Patient .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#DataRecord
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#DataRecord
 :DataRecord rdf:type owl:Class ;
             rdfs:subClassOf :HealthcareEntity .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#Device
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#Device
 :Device rdf:type owl:Class ;
         rdfs:subClassOf :HealthcareEntity .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#Doctor
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#Doctor
 :Doctor rdf:type owl:Class ;
         rdfs:subClassOf :Person ;
         owl:disjointWith :Nurse ,
                          :Patient .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#EmergencyResponseService
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#EmergencyResponseService
 :EmergencyResponseService rdf:type owl:Class ;
                           rdfs:subClassOf :Service .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#Environment
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#Environment
 :Environment rdf:type owl:Class ;
              rdfs:subClassOf :HealthcareEntity .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#HealthRecord
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#HealthRecord
 :HealthRecord rdf:type owl:Class ;
               rdfs:subClassOf :DataRecord .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#HealthcareEntity
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#HealthcareEntity
 :HealthcareEntity rdf:type owl:Class .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#HeartRateData
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#HeartRateData
 :HeartRateData rdf:type owl:Class ;
                rdfs:subClassOf :SensorData ;
                owl:disjointWith :OxygenLevelData ,
                                 :TemperatureData .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#HeartRateMonitor
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#HeartRateMonitor
 :HeartRateMonitor rdf:type owl:Class ;
                   rdfs:subClassOf :MonitoringDevice .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#HighTemperatureAlert
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#HighTemperatureAlert
 :HighTemperatureAlert rdf:type owl:Class ;
                       rdfs:subClassOf :Alert .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#Hospital
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#Hospital
 :Hospital rdf:type owl:Class ;
           rdfs:subClassOf :MedicalFacility .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#LowOxygenAlert
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#LowOxygenAlert
 :LowOxygenAlert rdf:type owl:Class ;
                 rdfs:subClassOf :Alert .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#MedicalFacility
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#MedicalFacility
 :MedicalFacility rdf:type owl:Class ;
                  rdfs:subClassOf :HealthcareEntity .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#MedicalStaff
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#MedicalStaff
 :MedicalStaff rdf:type owl:Class ;
               owl:equivalentClass [ rdf:type owl:Class ;
                                     owl:unionOf ( :Doctor
@@ -287,17 +287,17 @@
               rdfs:subClassOf :Person .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#Medication
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#Medication
 :Medication rdf:type owl:Class ;
             rdfs:subClassOf :DataRecord .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#MobileDevice
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#MobileDevice
 :MobileDevice rdf:type owl:Class ;
               rdfs:subClassOf :Device .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#MonitoredPatient
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#MonitoredPatient
 :MonitoredPatient rdf:type owl:Class ;
                   owl:equivalentClass [ owl:intersectionOf ( :Patient
                                                              [ rdf:type owl:Restriction ;
@@ -310,7 +310,7 @@
                   rdfs:subClassOf :Patient .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#MonitoringDevice
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#MonitoringDevice
 :MonitoringDevice rdf:type owl:Class ;
                   rdfs:subClassOf :Device ,
                                   [ rdf:type owl:Restriction ;
@@ -319,24 +319,24 @@
                                   ] .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#Nurse
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#Nurse
 :Nurse rdf:type owl:Class ;
        rdfs:subClassOf :Person ;
        owl:disjointWith :Patient .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#OxygenLevelData
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#OxygenLevelData
 :OxygenLevelData rdf:type owl:Class ;
                  rdfs:subClassOf :SensorData ;
                  owl:disjointWith :TemperatureData .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#OxygenSensor
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#OxygenSensor
 :OxygenSensor rdf:type owl:Class ;
               rdfs:subClassOf :MonitoringDevice .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#Patient
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#Patient
 :Patient rdf:type owl:Class ;
          rdfs:subClassOf :Person ,
                          [ rdf:type owl:Restriction ;
@@ -346,12 +346,12 @@
                          ] .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#Person
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#Person
 :Person rdf:type owl:Class ;
         rdfs:subClassOf :HealthcareEntity .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#RecoveredPatient
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#RecoveredPatient
 :RecoveredPatient rdf:type owl:Class ;
                   owl:equivalentClass [ owl:intersectionOf ( :Patient
                                                              [ rdf:type owl:Class ;
@@ -363,37 +363,37 @@
                   rdfs:subClassOf :Patient .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#Room
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#Room
 :Room rdf:type owl:Class ;
       rdfs:subClassOf :Environment .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#SensorData
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#SensorData
 :SensorData rdf:type owl:Class ;
             rdfs:subClassOf :HealthcareEntity .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#Service
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#Service
 :Service rdf:type owl:Class ;
          rdfs:subClassOf :HealthcareEntity .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#TelemedicineService
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#TelemedicineService
 :TelemedicineService rdf:type owl:Class ;
                      rdfs:subClassOf :Service .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#TemperatureData
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#TemperatureData
 :TemperatureData rdf:type owl:Class ;
                  rdfs:subClassOf :SensorData .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#TemperatureSensor
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#TemperatureSensor
 :TemperatureSensor rdf:type owl:Class ;
                    rdfs:subClassOf :MonitoringDevice .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#Treatment
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#Treatment
 :Treatment rdf:type owl:Class ;
            rdfs:subClassOf :DataRecord .
 
@@ -402,15 +402,15 @@
 #    Individuals
 #################################################################
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#High
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#High
 :High rdf:type owl:NamedIndividual .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#Low
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#Low
 :Low rdf:type owl:NamedIndividual .
 
 
-###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.owl#Medium
+###  https://asma-sikan.github.io/ontology-webspace/HealthcareMonitoringOntology.ttl#Medium
 :Medium rdf:type owl:NamedIndividual .
 
 
